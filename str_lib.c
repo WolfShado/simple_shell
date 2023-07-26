@@ -44,8 +44,10 @@ return (dest);
 char *_strcat(char *dest, const char *src)
 {
 int len_dest, len_src, i;
-for (len_dest = 0; *(dest + len_dest) != '\0'; len_dest++);
-for (len_src = 0; *(src + len_src) != '\0'; len_src++);
+for (len_dest = 0; *(dest + len_dest) != '\0'; len_dest++)
+;
+for (len_src = 0; *(src + len_src) != '\0'; len_src++)
+;
 for (i = 0; i < len_src && *(src + i) != '\0'; i++)
 {
 *(dest + len_dest + i) = *(src + i);
@@ -103,12 +105,12 @@ while (*(s1 + i) != '\0' && *(s2 + i) != '\0')
 {
 if (*(s1 + i) != *(s2 + i))
 {
-diff = *(s1 + i) - *(s2 + i);
+diff = *(s1 + i) -*(s2 + i);
 break;
 }
 else
 {
-diff = *(s1 + i) - *(s2 + i);
+diff = *(s1 + i) -*(s2 + i);
 }
 i++;
 }
