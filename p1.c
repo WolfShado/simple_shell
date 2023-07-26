@@ -46,9 +46,9 @@ write(STDERR_FILENO, "\n", 1);
 prmpt();
 }
 /**
- * _putserr - print a str to stderr
+ * _putserr - print a string to stderr
  *
- * @str: str to print
+ * @str: string to print
  */
 void _putserr(char *str)
 {
